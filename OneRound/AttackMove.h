@@ -4,7 +4,7 @@
 class AttackMove
 {
 public:
-	AttackMove();
+	AttackMove(CString /*name*/, int /*damage*/);
 	~AttackMove();
 	CString getName();
 	int getDamage();
