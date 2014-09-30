@@ -4,7 +4,9 @@ class Charmander :
 	public Pokemon
 {
 public:
-	Charmander();
+	Charmander(CString /*name*/, int /*health*/, int /*level*/, aspect_t /*pokemonsAspect*/);
 	~Charmander();
+	AttackMove highestLevelMove();
+	int damageThrown();
 };
 

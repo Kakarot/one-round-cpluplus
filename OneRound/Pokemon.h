@@ -6,7 +6,7 @@ class Pokemon
 public:
 	enum aspect_t { fire, grass, water };
 	Pokemon(CString /*name*/, int /*health*/, int /*level*/, aspect_t /*pokemonsAspect*/);
-	~Pokemon();
+	virtual ~Pokemon();
 	CString getName();
 	int getHealth();
 	int getLevel();

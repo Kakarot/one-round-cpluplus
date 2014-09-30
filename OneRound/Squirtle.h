@@ -4,7 +4,9 @@ class Squirtle :
 	public Pokemon
 {
 public:
-	Squirtle();
+	Squirtle(CString /*name*/, int /*health*/, int /*level*/, aspect_t /*pokemonsAspect*/);
 	~Squirtle();
+	AttackMove highestLevelMove();
+	int damageThrown();
 };
 
