@@ -2,7 +2,7 @@
 #include "Referee.h"
 
 
-Referee::Referee(Pokemon a, Pokemon b)
+Referee::Referee(Pokemon* a, Pokemon* b)
 {
 	Referee::a = a;
 	Referee::b = b;
@@ -65,18 +65,18 @@ void Referee::determineResistance(){
 	*/
 
 	//First check Pokemon a is weak to Pokemon b
-	if ((a.getAspect() == fire && b.getAspect() == water)
-		|| (a.getAspect() == grass && b.getAspect() == fire ||
-		(a.getAspect() == water && b.getAspect() == grass)))
+	if ((a->getAspect() == fire && b->getAspect() == water)
+		|| (a->getAspect() == grass && b->getAspect() == fire ||
+		(a->getAspect() == water && b->getAspect() == grass)))
 	{
 		aDefense = weakness;
 		bDefense = strongAgainst;
 	}// end first case
 
 	//Second check if Pokemon b is weak to Pokemon A
-	else if ((a.getAspect() == fire && b.getAspect() == grass)
-		|| (a.getAspect() == grass && b.getAspect() == water ||
-		(a.getAspect() == water && b.getAspect() == fire)))
+	else if ((a->getAspect() == fire && b->getAspect() == grass)
+		|| (a->getAspect() == grass && b->getAspect() == water ||
+		(a->getAspect() == water && b->getAspect() == fire)))
 	{
 		aDefense = strongAgainst;
 		bDefense = weakness;

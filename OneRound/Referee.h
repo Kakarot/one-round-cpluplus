@@ -3,9 +3,9 @@
 class Referee
 {
 public:
-	Referee(Pokemon /*a*/,Pokemon /*b*/);
+	Referee(Pokemon* /*a*/,Pokemon* /*b*/);
 	~Referee();
-	Pokemon a, b;
+	Pokemon *a, *b;
 	enum effectiveness{ normalDamage, weakness, strongAgainst };
 	effectiveness aDefense, bDefense;
 	int determineWinner(Pokemon, Pokemon);

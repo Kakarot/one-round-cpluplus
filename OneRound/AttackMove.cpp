@@ -21,3 +21,4 @@ CString AttackMove::getName(){
 int AttackMove::getDamage(){
 	return AttackMove::damage;
 }
+

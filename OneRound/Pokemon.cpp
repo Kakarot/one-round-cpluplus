@@ -29,3 +29,10 @@ int Pokemon::getLevel(){
 Pokemon::aspect_t Pokemon::getAspect(){
 	return Pokemon::pokemonsAspect;
 }
+
+AttackMove Pokemon::highestLevelMove(){
+	return *(new AttackMove("Bad", -1));
+}
+int Pokemon::damageThrown(){
+	return -1;
+}
