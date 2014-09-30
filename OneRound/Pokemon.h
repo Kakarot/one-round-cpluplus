@@ -11,8 +11,8 @@ public:
 	int getHealth();
 	int getLevel();
 	aspect_t getAspect();
-	virtual AttackMove highestLevelMove()=0;
-	virtual int damageThrown()=0;
+	virtual AttackMove highestLevelMove(); //should be pure virtual =0, but Referee class can't accept base class cause interface
+	virtual int damageThrown();
 
 protected:
 	CString name;
